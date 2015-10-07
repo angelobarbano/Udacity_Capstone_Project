@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+{% for post in posts%}
+    {% if post.author %}
+        <b>{{ post.author.email}}
+        	{% if user and user.id() == post.author.identity %}
+        	  (you)
+        	{% endif %}
+    {% else %}
+        Unknown wrote:
+    {% endif %}
+    <blockquote>{{post.content}}</blockquote>
+{% endfor %}
+
+<form action="/sign?wall_name={{wall_name}}" method="post">
+	<div><textarea name="content" rows="3" cols="60"></textarea></div>
+	<div><input type="submit" value="Post Comment"></div>
+</form>
+
+<hr>
+
+<form> Wall name:
+	<input value="{{wall_name}}" name="wall_name">
+	<input type="submit" value="switch">
+</form>
+
+<a href="{{url|safe}}">{{url_linktext}}</a>
+
+ 
+
+
+ 
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+body {
+  background-color: #355c7d;
+  text-align: center;
+}
+
+h1 { 
+  color: white;
+}
+
+h2 {
+  text-decoration: underline;
+  color: white;
+}
+
+.lesson {
+  background-color: grey;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.concept {
+  background-color: #7694ad;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 4px;
+}

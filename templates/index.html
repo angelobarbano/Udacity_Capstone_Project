@@ -1,0 +1,359 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="lesson">
+  <h2>Session 1</h2>
+      <div class="concept">		
+        <h3>Introduction</h3>
+          <p>
+            The "web" is made up of several parts. People use their browsers to view web pages. These pages are stored on other computers called servers that "serve" information to client computers through the internet using the http protocol.This information can take many forms, but the most common are HTML documents. HTML is a language used to format the data displayed on webpages. 
+          </p>
+      </div>
+      <div class="concept">
+        <h3>Working with HTML</h3>
+          <p>
+            HTML functions by using tags to add special properties to the text we write. Tags can make text bold, create spacing, and even embed videos, pictures, and links to other web sites on our page.<em> *Note: Computers will not forgive errors in syntax*</em>
+          </p>
+      </div>
+      <div class="concept">
+        <h3>Basic tags</h3>
+    
+          <ul>
+            <li>&lt;b&gt; bold</li>
+            <li>&lt;em&gt; italics</li>
+            <li>&lt;br&gt; line break</li>
+            <li>&lt;p&gt; paragraph</li>
+          </ul>
+          <p>
+            Some tags like anchor   include attributes that modify the function performed.
+            Some tags like break are void tags and do not require a closing tag.
+            Some tags like paragraph create a block around their content grouping it and seperating from other text. 
+          </p>
+      </div>
+</div>
+<div class="lesson">
+  <h2>Session 2</h2>
+    <div class="concept">
+      <h3> HTML Structure</h3>
+        <p>
+          <u>Tree Like:</u> HTML has a branching structure where elements contain other elements. This is called nesting.<br>
+        </p>
+        <p>   
+          <u>HTML:</u> Hyper Text Markup Language provides the structure of a document.<br>
+        </p>
+        <p>
+          <u>CSS:</u> Cascading Style Sheets provides the style of the document.<br>
+        </p>
+        <p>
+          <u>DOM:</u> Document Object Model is the convention for representing and interacting with objects in html.<br>
+        </p>
+        <p>
+          <u>Boxes:</u> Websites can be broken down into boxes to group things together and allow for easier editing or rearranging<br>
+        </p>         
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 3</h2>
+    <div class="concept">
+      <h3>CSS Usage</h3>
+        <p>
+          CSS takes our HTML code to another level. With CSS we add style on top of the structure provided by our HTML. Create a seperate file .css, and link to that in the
+          head of the HTML document. CSS works similarly to writing HTML. It consists of selectors that choose the element to apply style to and rules between {}.Rules consist of attributes like background-color, and values which in this case would be the color we wanted to use stated: background-color: blue;. Selectors can specify targets by element type (like paragraphs or divs), or by classes. In the Html file we can declare class names for different elements to plan out how to apply styles.The C is CSS stands for Cascading, this refers to the inheritance structure of CSS. This means that styles applied to an element will be inherited by nested elements within. We can create additional more specific classes, for instance if we had three paragraphs, and wanted one to be a different style than the others. 
+        </p>
+    </div>
+    <div class="concept">
+      <h3>Final Stage One Thoughts</h3>
+        <p>
+          Armed with some basic knowledge of html and css, the first draft of our website is under construction. Important things here: use correct syntax, indent to show nested elements, and avoid uneccessary repetition. Repetition leads to mistakes, makes it harder to change things later on, and makes it harder for others to understand your code.
+        </p>
+    </div>
+</div> 
+<div class="lesson">
+  <h2> Session 4</h2>
+    <div class= "concept">
+      <h3>Computer Programming</h3>
+        <p>
+          In simplest terms a computer is any device that can perform computations. A program is a series of instructions to make a computer do something, or solve a problem. 
+          To do this we need to use computer languages like Python to communicate with the computer. The last piece of the puzzle is the interpreter, which takes our commands and translates them for the computer at a basic level.     
+        </p>   
+    </div>
+    <div class="concept">
+      <h3>Grammar</h3>
+        <p>
+          Grammar is the convention we use to structure our use of a language. To describe the grammar of Python we were introduced to Backus-Naur Form. In this method we break down the structure of sentences, best described in this picture.
+        </p>
+        <img src= "/images/backus.jpg" alt= "Backus Naur Form">
+        <p>
+          This leads us to the basic grammar for aritmetic expressions in Python, shown here
+        </p>
+        <img src= "/images/arithmetic.jpg" alt= "Arithmetic Expression">
+    </div>      
+</div>
+<div class="lesson">
+  <h2>Session 5</h2>
+    <div class="concept">
+      <h3>More Python</h3>
+        <p>  
+          This session introduced some more hardcore programming concepts, mainly variables and strings. Variables allow us to save some data for use. Strings give us a way to work with data other than numbers. 
+        </P>
+    </div>
+    <div class="concept">
+      <h3>Variables</h3>
+        <p>
+          A variable is a place to assign a value and save it to memory. We assign a value to a variable by writing a line of code naming the variable and assigning a value "example=1". Now whenever we call example in later code, the interpreter is going to know to use the integer 1. In programming we often use an equal sign to assign a value, in HTML this was done for naming classes. 
+        </p>
+    </div>
+    <div class="concept">
+      <h3>Strings</h3>
+        <p>
+          A string is simply a sequence of characters. By using quotes we can work with non-numerical data. If we enter 2+2 in python we get 4. If we enter "2"+"2" we get 22. This is because designating the 2 a string using quotation marks tells the interpreter to treat the 2 as a character, and not an integer to perform arithmetic on
+        </p>
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 6</h2>
+    <div class= "concept">
+      <h3>Functions</h3>
+        <p>
+          The way to make more powerful code is to use functions. Functions or procedures are elements which take some form of input and do something with that data. The find command used earlier is an example of a built in function in Python.
+          </p>
+    </div>
+    <div class="concept">
+      <h3>Procedure Syntax</h3>
+        The following is the proper syntax for  using procedures:
+        <br><br>
+        <em>&lt;procedure&gt; (input,input2,...)</em>
+        <br><br>   
+        To create a new procedure we enter this:
+        <br><br>
+        <em>def &lt;procedure_name&gt; (input, input2,...):<br>
+        Code to be run on input</em>
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 7</h2>
+    <div class="concept">
+      <h3>Equality Comparisons</h3>
+        <p>
+          We can use code to make different decisions based on the value of data. To do this we use comparisons. Less than, greater than, "==" which is  equal, and "!=" or not equal all evaluate to a Boolean True or False. Using this we can make our code branch out depending on the data.
+        </p>
+    </div>
+    <div class="concept">   
+      <h3>If and Else</h3>
+        If statements are what we use to make these branching decisions in our code. The syntax is:<br>
+        <br>
+        <em>If (test expression(such as x == 1)):<br>
+        Block of code</em>
+          <p>
+            Our program will run, then it will evaluate the if statement(running the block of code if it meets the test conditions) and then move on to the next instructions. We can use an Else statement, which follows the same syntax as If, to run another block of code when data does not meet the test conditions.
+          </p>
+    </div>
+    <div class="concept">
+      <h3>While loops</h3>
+        <p>
+          Using While we can execute a conditional block of code an unlimited amount of times as long as the test condition remains true. While uses the same syntax as the other conditional statements. We can use break, to stop the while loop, by using another condition. That looks like this
+        </p>
+        <em>while (test expression):<br>
+            Block of code <br>
+            if (test expression):<br>
+            Break</em>
+    </div>
+</div> 
+<div class="lesson">
+  <h2>Session 8</h2>
+    <div class="concept">
+      <h3>Lists</h3>
+        <P>
+          Lists are a type of structure data similar to, but different from, strings. Strings are a sequence of characters but lists can contain anything; strings, numbers, even other lists. We use lists like this.
+        </p>
+        <em>p= [list item, another one, and another one]</em>
+    </div>
+    <div class= "concept">
+      <h3>Working with Lists</h3>
+        <p>
+          Lists unlike strings can be changed. This is called mutation. When we changed strings, we actually created a new string formed of the old string plus the changes. With mutations we can modify the original list itself.
+        </p>
+    </div>
+    <div class="concept">
+      <h3>List Operators</h3>
+        <p>
+          There are multiple functions we can use to work with lists. Append allows us to tack elements onto the end of a list. Plus concatenates two lists which, unlike append, creates a new list rather than mutating the original lists. Len or length counts the number of elements in a list.
+        </p>
+    </div>
+    <div class="concept">
+      <h3>For Loops</h3>
+        We can use for loops to run a function on every element in a list, regardless of how long the list is. This is how  we use For:
+        <br><br>
+        <em>for (name) in (list):<br>
+        Block of Code</em>
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 9</h2>
+    <div class="concept">
+      <h3> Python Modules</h3>
+        <p>
+          Turns out there are even more tools within Python that we can use to make more
+          powerful code. One example is <em>"webbrowser.open"</em>. This allows us to write code
+          that can open webpages. In the lesson this is implemented in a "Take a breaK" 
+          program where we wrote a program that plays a video to remind us to take a break
+          when we are working on the computer. To use this function we need to add a line
+          <em>"import webbrowser"</em> in our code. This tells Python we want to use webbrowser and its
+          functionality in our program. By using the function <em>"time.sleep()"</em> we can cause the program 
+          to wait a period of time before executing the rest of the code. This was used
+          to set break intervals for our video playing program. Time and Webbrowser are 
+          modules within the standard Python library. By using these built in functions 
+          we are taking advantage of abstraction. We are removed from having to do the tedious work 
+          of figuring out how to perform these tasks from scratch and can use preexisting modules 
+          to build our own programs on. oslist.
+        </p>
+    </div> 
+</div>
+<div class="lesson">
+  <h2>Session 10</h2>
+    <div class="concept">
+      <h3>Introducing Classes</h3>
+        <p>
+          We were introduced to the concept of classes by using the turtle module
+          to draw shapes. We named our turtle Brad, and created him by calling <em>"turtle.Turtle()"</em>.
+          Brad is an instance, or a specific unique object, of the class Turtle. The difference between
+          using a class like Turtle and calling a function like <em>"os.list"</em> is that
+          when we uses classes it runs an initialization(init) function that creates space in memory for 
+          the instance we are creating. So when we made Brad the Turtle, space was created for the specific 
+          instance or object named Brad, which has access to all the functions of the Turtle class.
+          The relationship between classes and objects was described as being similar to blueprints and the 
+          specific buildings that follow that blueprint. The point being that classes provide a structure, and 
+          objects are unique implementations of that structure. So while Turtle class objects draw shapes, specific 
+          Turtle instances may draw different shapes or use different colors. This is somewhat similar to the use 
+          of classes in CSS. I use a class called "lesson" which dictates the format that each of these sessions follow.
+          However each individual session contains different content. Each note session represents an instance of the class lesson, while built using the same guidelines they are still unique.
+        </p>
+    </div>
+    <div class="concept">
+      <h3> More Classes </h3>
+        <p>
+          We went on to use code from Twilio in order to write a program that sends text messages.
+          This exemplifies the benefits of abstraction. Twilio is a complex piece of code that
+          interfaces between different networks. Someone just learning to program would have 
+          no clue how to make their code do what Twilio does. But we are able to use this premade code in
+          order to accomplish our goal by just reading the documentation and plugging in the specifics for our purposes.
+        </p>
+        <p>
+          In using Twilio we learned a new Python word, "From". When we used functions from the python library we wrote a line <em>"import module_name"</em>. 
+          When using Twilio we wrote <em>"from twilio.rest import TwilioRestClient"</em>. Looking on Google we found that a "from" statement means from a module import these specific attirbutes.
+          So "from" twilio.rest, we want to use TwilioRestClient in our code. 
+        </p>
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 11</h2>
+    <div class="concept">
+      <h3>Making Classes</h3>
+        <p>
+          We started this lesson by beginning to define a class to make a compendium of movies.
+          This quickly led to a trip to the Google style guide for Python, a series of conventions
+          that professional and courteous programmers should use that will make code more readable.
+          We learn here that class names are in Uppercase.
+        </P>
+        <p>
+          To make this work we use two python files. One file contains the class definition, and the other
+          is where we create the instances of the class. In this example our class "Movie" is in a file called media.py, while 
+          the individual movies are in entertainment_center.py.
+        </p>
+        <p>
+          The next step is to define init. In earlier lessons we learned that when we use classes an initialization
+          process begins establishing memory space for an instance of our class. This was the fundamental difference
+          between using Turtle and using webbrowser. Init is a constructor which essentially initialzes all the data for a particular instance and
+          uses "self" to access the variables of the instance in question. We'll look at the actual code used.
+        </p>
+        <em>def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):<br>
+        self.title = movie_title<br>
+        self.storylne = movie_storyline<br>
+        self.poster_image_url = poster_image<br>
+        self.trailer_youtube_url = trailer_youtube</em><br><br>
+        In the entertainment_center file we can now create an instance of the movie class. Which looked like this.<br><br>
+        <em>import media<br>
+        toy_story = media.Movie(<br> all the specific info for the movie in corresponding order to how we did it in the definition of Movie class.)</em>
+        <p>
+          Then when we said <em>"print(toy_story.storyline)"</em> it would display the text we entered for that parameter. The lesson went onto create a Movie instance for Avatar.
+          This instance will have it's own unique storyline, trailer, etc. These variables in the class Movie, which are unique for each instance, are called instance variables. 
+        </p>
+        <p>
+          The next step is to play the trailer for the movie. We do this by defining a function in the Movie class <em>"show_trailer"</em> which takes self as its argument and then uses webbrowser
+          to open <em>"self.trailer_youtube_url"</em>. The show_trailer function is an example of an instance method, or a function in a class associated with an instance that takes self as it's first argument.
+        </p>
+        <p>
+          To finish this project we used someone else's program <em>fresh_tomatoes</em> to create the site. We import it into our code,
+          create a variable "movies" with a list of our Movie instances, and then run fresh_tomatoe's <em>"open_movies_page"</em> function to make a movie page
+          out of our data. Not too shabby.
+        </p>
+    </div>
+</div>
+<div class="lesson">
+  <h2>Session 12</h2>
+    <div class="concept">
+      <h3>More Object Oriented Programming</h3>
+        <p>
+          In this lesson we explored some topics related to classes and objects. The first new concept was class variables. Previously we have used instance variables, which were unique
+          to each new object of the Movie class. Class variables, however, are variables that all instances share. The example here is the "valid_ratings" variable. 
+        </p>
+        <em>"VALID_RATINGS" = ["G", "PG", "PG-13", "R"]"</em>
+        <p>
+          This will allow each of our Movie instances to check their ratings against the list of valid ones, to 
+          make sure their rating is valid. A variable used in this fashion, is called a constant. This means 
+          the values are not likely to change anytime soon. Google's style guide suggests using all caps for variables 
+          with a constant value.
+        </p>
+        <p>
+          Some class variables are predefined in python. This includes <em>__doc__</em> which allows us to read and write documentation for the class we're using,
+          <em>__name__</em>, which displays the name of the class, and <em>__module__</em> which displays the name of the module the class is defined in. 
+        </p>
+        <p>
+          This lesson introduced the new concept of inheritance. Well, not brand new. We first discussed the concept of inheritance when dealing with CSS. There it meant that certain values were passed from elements higher on the tree structure to those nested within. So if we set the font for the body of an html document, all the individual paragraphs in that body would use that font by default. Here it's a way to create parent and child classes that share instance variables. By entering the desired parent directory in the normally empy () after our class name. This sets up the relationship between parent and child. We can access the parent information by calling the <em>"Parent.__init__"</em> function from 
+          within the child class definition. We concluded this lesson by learning about method overriding where we can change the implementation of a funcion inherited by a child class. We do this by redefining the function in the child class. Now when you call the function from the parent it will behave the way it always did, yet the child will use it's version of the function. 
+        </p>
+          <b>So that's object oriented programming in a nutshell. I had heard the term a million times yet never knew what it meant. Now I do. Not bad!</b>
+    </div>
+</div>
+<div class="lesson">
+  <h2> STAGE THREE CORRECTIONS </h2>
+    <div class="concept">
+      <h3> VOCABULARY </h3>
+        <p>
+          <b>Object:</b> According to wikipedia "In computer science, an object is a location in memory havinga value and possibly referenced by an identifier. An object can be a variable, a data structure, or a function. In the class-based object-oriented programming paradigm, "object" refers to a particular instance of a class where the object can be a combination of variables, functions, and data structures"
+          <a href="https://en.wikipedia.org/wiki/Object_(computer_science)">Wikipedia Object Entry</a>
+        </P>
+        <p>
+          <b>Class:</b>The template or blueprint used to create specific objects of a similar nature.
+        </p>
+        <p>
+          <b>Instance:</b> Specific example of any object
+        </p>
+        <p>
+          <b>Module:</b> A module is a file containing Python definitions and statements. Definitions from a module can be imported into other modules.
+        </p>
+        <p>
+          <b>Method:</b> A function within a class
+        </p>
+        <p>
+          <b>Library:</b> A collection of built in functions and modules. The Python Standard Library lets all users of Python access these resources for their programs.
+        </P>
+        <p>
+          <b> Inheritance:</b>Inheritance allows objects to take on the properties of pre existing objects. Classes can also inherit methods and values from parent classes.
+        </p>
+    </div>
+    <div class= "concept">
+      <h3> Why OOP is important for large projects</h3>
+        <p>
+          Object oriented programming is useful for larger projects.By using classes we are using a template to create similar programming objects in the future. It is another way we can avoid writing duplicate code, and we know avoiding repetition is always preferable.It also allows us to change things in our code more easily. By using classes to create similar objects, we can make changes to the class and those changes will be made to all the related objects.In the future if a change presents a problem, we will only have to look in one location for the bug rather than in each individual object.
+        </p>
+    </div>
+    <div class="concept">
+      <h3>Abstract thinking and connection to other discipline</h3>
+        <p>
+          Object oriented program shares some concepts in common with HTML and CSS.The use of classes is similar. In OOP classes are a template from which objects are created.
+          In CSS we use classes to group together similar elements in a webpage and style them in a uniform fashion. A similarity with HTML is the use of external resources.
+          In OOP we can import definitions and functions from exterior module. In HTML we can embed image files in our page, or even link to other pages. Inheritance is also shared between these disciplines. Objects inherit properties from classes which in turn can inherit properties from super classes. In CSS elements nested in other elements inherit values from their parents. If we set a style for the body element of an HTML file, all the elements within the body will share those styles by default. We also learned more about "abstraction" in which complicated details are hidden so that we can use other peoples code for our projects without having to understand how everything works under the hood. As long as we read the documentation we are able to utilize the code. This means we can focuse on what we want to accomplish with our code without having to reinvent the wheel over and over again.
+        </p>
+    </div>
+</div>
+{% endblock %}
