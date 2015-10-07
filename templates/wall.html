@@ -6,10 +6,10 @@
     {% if post.author %}
         <b>{{ post.author.email}}
         	{% if user and user.id() == post.author.identity %}
-        	  (you)
+        	  (you)</b>
         	{% endif %}
     {% else %}
-        Unknown wrote:
+        <b>Unknown wrote:</b>
     {% endif %}
     <blockquote>{{post.content}}</blockquote>
 {% endfor %}

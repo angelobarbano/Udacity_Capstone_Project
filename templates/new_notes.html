@@ -1,10 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
     <div class= "lesson">
-        <h2> What I learned in Stage 4</h2>
-            <div class = "concept">
-                <h3> First Thing </h3>
-
+      <h2> What I learned in Stage 4</h2>
+        <div class = "concept">
+          <h3> Understanding Servers</h3>
+            <p> 
+               A network is two or more entities communicating even though they are not all directly connected. We measure networks in terms of latency, which is the measure of time it takes a message to get from source to destination, and bandwith, which is the amount of information that can be transmitted over a  given measure of time. 
+            </p>
+            <p>
+              <b>Networks need : A way to encode and interpret messages, a way to route
+               messages, and rules for deciding  who gets to use resources</b>
+            </p>
+            <p>
+              The internet uses the HTTP protocol.In HTTP the client(your web browser)
+              sends a get request(which contains a request for a particular object)
+              to the server(in this example the system hosting udacity.com).
+              The server gets the message, does some work in the background, and then
+              sends a response with the requested object.
+            </p>
+            <p>
+              The browser requests usually use the get method, to retrieve something 
+              from the server.The server responses are either static(displaying a prewritten
+              file or image) or dynamic(made on the fly). Almost all modern websites are made dynamically by programs called web applications which render the conent we interact with.
+           </p>
+        </div>
     </div>    
         
 {% endblock %}

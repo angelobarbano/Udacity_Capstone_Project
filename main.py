@@ -32,6 +32,10 @@ class NoteHandler(Handler):
     def get(self):
         self.render("index.html")
 
+class New_notesHandler(Handler):
+    def get(self):
+        self.render("new_notes.html")
+
 DEFAULT_WALL = 'Public'
 
 def wall_key(wall_name=DEFAULT_WALL):
@@ -88,4 +92,4 @@ class PostWall(Handler):
         self.redirect('/comment')
 
 app = webapp2.WSGIApplication([('/', MainHandler), ('/notes', NoteHandler), ('/comment', CommentHandler), ('/sign', PostWall)
-], debug=True)
+, ('/new', New_notesHandler)], debug=True)
