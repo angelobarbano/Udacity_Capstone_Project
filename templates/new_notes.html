@@ -24,6 +24,69 @@
               file or image) or dynamic(made on the fly). Almost all modern websites are made dynamically by programs called web applications which render the conent we interact with.
            </p>
         </div>
+        <div>
+          <h3>Validation</h3>
+            <p>
+              Now that
+              we are allowing users to post data to our site, we're 
+              openings ourselves up to a whole host of nasty problems.
+              Our users may enter data incorrectly, and we need to
+              recognize that, and inform the user of the error. Second,
+              bad people may try to send malicious data to our site. 
+            </p>
+            <p>
+              The solution to this is validation. By validating user input
+              we can deliver error messages to users, and prevent intentional 
+              or unintentional compromise of the web site. We can use 
+              python and if statements to check if the input meets our criteria
+              (check if numbers are numbers and text is text). If it does, great!
+              If not we might want to tell the user that a mistake was made and 
+              send the form again.Jinja also features a neat auto escape feature that  
+              automatically 
+              substitues out html characters so that the browser doesn't render 
+              them incorrectly.
+            </p> 
+        </div>
+        <div>
+          <h3>Templates(Or: How I learned to love Jinja and stop worrying.)</h3>
+            <p>
+              In this lesson we discovered the joy of templates. I say a joy, because trying 
+              to render html in python is super annoying. With Jinja we can create templates. This allows us
+              to maintain a uniform appearance across multiple pages within a website. It also makes it easier because we can 
+              set all the styles and then any additional page can be designated an extension of the base html and we can skip headers
+              and style. Its a similar jump as when we went from using html only to using css.
+            </p>
+            <p>
+              All this means a lot less repetition. This is a theme we revisit from time to time. Less repetition means less mistakes. It's also easier for others and even yourself when you
+              review the code. Repetition is confusing and impractical. For a small investment of time in creating templates, we can increase productivity for later work. Some large scale projects wouldn't
+              be feasible without proper use of abstraction. By having templates we can essentially plug in content into preformatted html. 
+            </p>
+            <p>
+              Despite all this, my favorite thing about Jinja is that it lets you run simple logic within your html. I've been using this in the comment section. Using a 'for' loop I iterate through all the posts
+              gathered by a database query and then format and display them in the browser. This allows us to completely stop rendering html with python. Now we can call on Jinja to render html, and even
+              pass variables from python into our html.
+            </p> 
+        </div>
+        <div>
+          <h3>Databases</h3>
+            <p>
+              Perhaps the biggest upgrade to website functionality comes 
+              from the database. The database allows users to post content
+              to our site, and then have that data retained. Using Server
+              Query Language(SQL or many variants) we can retrieve and display
+              this data. So users can leave comments on this site and then
+              it will be stored in a database; and then every time someone visits 
+              the comment section the site runs a database query to format and display 
+              all the comments so far.
+            </p>
+            <p>
+              That pretty much covers the big concepts I learned in Stage 4. I didn't
+              spend a whole lot of time taking notes, most of my time
+              was spent working through the code itself. 
+            </p>
+
+        </div>
+
     </div>    
         
 {% endblock %}
