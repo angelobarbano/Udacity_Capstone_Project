@@ -3,30 +3,22 @@
 {% block content %}
   
 {% for post in posts%}
-    {% if post.author %}
-        <b>{{ post.author.email}}
-        	{% if user and user.id() == post.author.identity %}
-        	  (you)</b>
-        	{% endif %}
-    {% else %}
-        <b>Unknown wrote:</b>
-    {% endif %}
+    <b>{{post.author}} wrote:</b>
     <blockquote>{{post.content}}</blockquote>
 {% endfor %}
-
+<hr>
 <form action="/sign?wall_name={{wall_name}}" method="post">
+    <div><textarea name= "author" rows="1" cols="30"></textarea></div>
 	<div><textarea name="content" rows="3" cols="60"></textarea></div>
 	<div><input type="submit" value="Post Comment"></div>
 </form>
 
 <hr>
+<a href="/"><h2>Home</h2></a>
 
-<form> Wall name:
-	<input value="{{wall_name}}" name="wall_name">
-	<input type="submit" value="switch">
-</form>
 
-<a href="{{url|safe}}">{{url_linktext}}</a>
+
+
 
  
 
